@@ -32,8 +32,8 @@
                 <input type="text" name="username" placeholder="Никнейм" required     />    
                 <input type="email" name="email" placeholder="Email" required />    
                 <input type="password" name="password" placeholder="Пароль"     required     />
-                <input type="password" name="password" placeholder="Повторите пароль"     required     />    
-                <input type="submit" name="submit" value="Register" />
+                <input type="password" name="password2" placeholder="Повторите пароль"     required     />    
+                <input type="submit" name="submit" value="Зарегистрироваться" />
             </form>
         </div>
         <?php } ?>
