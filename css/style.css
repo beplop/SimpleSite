@@ -1,5 +1,58 @@
+.float {
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-top: 5px;
+     height: 90px;
+     background-color:lightcyan;
+     border-radius: 10px;
+}
+.big {
+     margin-top: 5px;
+     background-color: white;
+     display: inline-block;
+     border-radius: 10px;
+     height: 500px;
+     width:88%;
+}
+.links {
+     margin-left: 50px;
+     background-color: lightcyan;
+     width:80px;
+     height: 500px;
+     border-radius: 10px;
+     display: inline-block;
+}
+#math {
+     font-size:40px;
+     font-weight:40px;
+     font-family: HELTERSKELTER;
+     color: red;
+}
+.head {
+     margin-left:50px;
+     float:left;
+     width: 80%;
+     background-color: lightcyan;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius : 10px;
+     height: 121px;
+}
+.user{margin-right: 50px;
+     max-width: 100%;
+     max-height: 120px;
+     overflow:hidden;
+     background-color: white;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+     padding-left: 30px;
+     padding-bottom:15px;
+     padding-top: 3px;
+
+}
 body {
      font-family:Arial, Sans-Serif;
+     background: url(math.png);
+     background-size:100%;
 }
 .clearfix:before, .clearfix:after{
      content: "";
@@ -9,15 +62,20 @@ body {
      clear: both;
 }
 a{
-     color:#0067ab;
+     color:red;
      text-decoration:none;
 }
 a:hover{
      text-decoration:underline;
 }
 .form{
-     width: 300px;
+     width: 260px;
      margin: 0 auto;
+     background-color: lightcyan;
+     border-radius: 10px;
+     padding-left: 30px;
+     padding-bottom:15px;
+     padding-top: 3px;
 }
 input[type='text'], input[type='email'],
 input[type='password'] {
@@ -31,8 +89,8 @@ input[type='password'] {
 }
 input[type='submit']{
      padding: 10px 25px 8px;
-     color: #fff;
-     background-color: #0067ab;
+     color: black;
+     background-color: crimson;
      text-shadow: rgba(0,0,0,0.24) 0 1px 0;
      font-size: 16px;
      box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
@@ -42,5 +100,5 @@ input[type='submit']{
      cursor:pointer;
 }
 input[type='submit']:hover {
-     background-color: #024978;
+     background-color: red;
 }
