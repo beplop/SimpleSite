@@ -1,10 +1,18 @@
+.headline {
+     border: 2px solid red;
+     width: 500px;
+}
 #bad_img {
      width: 800px;
      height: 500px;
+     border: 1px solid darkturquoise;
      padding: 10px;
+     margin-top: 10px;
 }
 .img {
+     border: 1px solid darkturquoise;
      padding: 10px;
+     margin-top: 10px;
      width: 500px;
 }
 .float {
