@@ -1,6 +1,7 @@
 .headline {
      border: 2px solid red;
      width: 500px;
+     border-radius: 10px;
 }
 #bad_img {
      width: 800px;
@@ -33,7 +34,7 @@
      padding:5px;
      word-wrap: break-word;
      margin-left: 137px;
-     margin-top: 130px;
+     margin-top: 133px;
      background-color: white;
      display: inline-block;
      border-radius: 10px;
@@ -41,7 +42,7 @@
 }
 .links {
      border: 2px solid darkturquoise;
-     margin-top: 130px;
+     margin-top: 133px;
      margin-left: 50px;
      background-color: lightcyan;
      width:80px;
@@ -57,7 +58,7 @@
      color: red;
 }
 .head { 
-     border: 2px solid red;
+     border: 4px ridge red;
      margin-left: 50px;
      position: fixed;
      width: 80%;
@@ -70,7 +71,7 @@
 
 }
 .user{
-     border: 2px solid red;
+     border: 4px ridge red;
      border-top-right-radius: 10px;
      border-bottom-right-radius: 10px;
      padding-left: 30px;
