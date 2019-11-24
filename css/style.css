@@ -1,3 +1,17 @@
+#profile_head {
+     border: 4px ridge red;
+     margin-left: 50px;
+     width: 92%;
+     display: inline-block;
+     background-color: lightcyan;
+     display: inline-block;
+     border-radius: 10px;
+     height: 121.5px;
+
+}
+#vk {
+     width: 30px;
+}
 .headline {
      border: 2px solid red;
      width: 500px;
@@ -22,7 +36,7 @@
      margin-left: -7px;
      margin-right: 50px;
      margin-top: 10px;
-     height: 90px;
+     height: 75px;
      background-color:lightcyan;
      border-radius: 10px;
      position: absolute;
@@ -41,11 +55,12 @@
      width:87%;
 }
 .links {
+     padding: 2px;
      border: 2px solid darkturquoise;
      margin-top: 133px;
      margin-left: 50px;
      background-color: lightcyan;
-     width:80px;
+     width:75px;
      height: 500px;
      border-radius: 10px;
      display: inline-block;
@@ -104,9 +119,24 @@ a{
 a:hover{
      text-decoration:underline;
 }
+#profile_links {
+     padding: 2px;
+     border: 2px solid darkturquoise;
+     margin-left: 50px;
+     background-color: lightcyan;
+     width:75px;
+     height: 500px;
+     border-radius: 10px;
+     margin-top:5px;
+}
+#exp > div {
+     float: left;
+}
 .form{
+     border: 4px ridge red;
      width: 260px;
-     margin: 0 auto;
+     margin-left: 31%;
+     margin-top: 10px;
      background-color: lightcyan;
      border-radius: 10px;
      padding-left: 30px;
