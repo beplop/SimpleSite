@@ -5,6 +5,7 @@ include("auth.php");
 <!DOCTYPE html>
 <html>
      <head>
+        <link rel="shortcut icon" href="css/title.jpg" type="image/x-icon">
          <meta charset="utf-8">
          <title>Профиль</title>
          <link rel="stylesheet" href="css/style.css" />
@@ -14,7 +15,9 @@ include("auth.php");
                   <p id="math" align="center">Математический форум</p>
             </div>
         <div id="exp">
-             <div id="profile_links"> <a href="index.php">&#8226 Главная</a>
+             <div id="profile_links"> <p>Навигация:</p>
+                                      <a href="index.php">&#8226 Главная</a>
+                                      <a href="formulas.php">&#8226 Формулы</a>
              </div>
             <div class="form">
              <p>Профиль</p>
@@ -27,6 +30,7 @@ include("auth.php");
              </p>
              <a href="logout.php">Выйти</a>
              </div>
-        </div>    
+        </div>
+        <div id="profile_float"> <div align="center">Хамидуллин Артур</div> <div align="center">2019</div>    
      </body>
 </html>
