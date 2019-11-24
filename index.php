@@ -20,7 +20,10 @@ include("auth.php");
              <a href="logout.php">Выйти</a>
             </div>
           </div>  
-            <div class="links"> <a href="index.php">&#8226 Главная</a>
+            <div class="links">
+                    <p>Навигация:</p>
+                    <a href="index.php">&#8226 Главная</a> <br>
+                    <a href="formulas.php">&#8226 Формулы</a>
             </div>
             <div class="big">
                 <div align="center">
