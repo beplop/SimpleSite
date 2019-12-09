@@ -4,6 +4,7 @@
          <meta charset="utf-8">
          <title>Авторизация</title>
          <link rel="stylesheet" href="css/style.css" />
+         <link rel="shortcut icon" href="css/title.jpg" type="image/x-icon">
      </head>
      <body>
             <?php
@@ -21,6 +22,12 @@
                         if($rows==1){
                      $_SESSION['username'] = $username;
                      header("Location: index.php");
+                     $user = mysqli_fetch_assoc($result);
+                     $_SESSION['auth'] = true;
+                     $_SESSION['id'] = $user['id'];
+                     $_SESSION['login'] = $user['login'];
+                     $_SESSION['status'] = $user['status'];
+                     $_SESSION['rate'] = $user['rate'];  
                          }else{
                  echo "<div class='form'>
                  <h3>Имя пользователя или пароль некорректны.</h3>
@@ -28,7 +35,7 @@
                     }else{
              ?>
              <div class="form">
-                 <h1>Вход</h1>
+                 <h1>Авторизация</h1>
                  <form action="" method="post" name="login">
                       <input type="text" name="username" placeholder="Никнейм"required />     
                       <input type="password" name="password" placeholder="Пароль" required />       
