@@ -24,6 +24,8 @@ include("auth.php");
             <a href="index.php">&#8226 Главная</a> <br>
             <a href="formulas.php">&#8226 Формулы</a>
             <a href="game.php">&#8226 Игра</a>
+            <br>
+            <a href="statya.php">&#8226 Статья</a>
         </div>  
         <div id="bad_big">
                 <div align="center">
