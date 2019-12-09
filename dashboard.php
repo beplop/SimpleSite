@@ -1,11 +1,12 @@
 <?php
 require('db.php');
 include("auth.php");
+include("rating.php");
 ?>
 <!DOCTYPE html>
 <html>
      <head>
-        <link rel="shortcut icon" href="css/title.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="css/title.jpg" type="image/x-icon"> 
          <meta charset="utf-8">
          <title>Профиль</title>
          <link rel="stylesheet" href="css/style.css" />
@@ -18,14 +19,18 @@ include("auth.php");
              <div id="profile_links"> <p>Навигация:</p>
                                       <a href="index.php">&#8226 Главная</a>
                                       <a href="formulas.php">&#8226 Формулы</a>
+                                      <a href="game.php">&#8226 Игра</a>
              </div>
-            <div class="form">
+            <div id="form_user">
              <p>Профиль</p>
              <p>Добро пожаловать,<?php echo $_SESSION['username']; ?>!</p>
+             <p><?php if ($_SESSION['auth'] == true and $_SESSION['status'] == 10) {
+                 echo "Вы админ";
+             } else echo "Вы обычный юзер";  ?></p>
              <p>Ваш рейтинг: 
                 <?php
-                $rate=0;
-                echo "$rate"; 
+                echo $_SESSION['rate'];
+                //echo "$rate";
                 ?>   
              </p>
              <a href="logout.php">Выйти</a>
