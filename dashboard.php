@@ -20,6 +20,8 @@ include("rating.php");
                                       <a href="index.php">&#8226 Главная</a>
                                       <a href="formulas.php">&#8226 Формулы</a>
                                       <a href="game.php">&#8226 Игра</a>
+                                      <br>
+                                      <a href="statya.php">&#8226 Статья</a>
              </div>
             <div id="form_user">
              <p>Профиль</p>
@@ -36,6 +38,11 @@ include("rating.php");
              <a href="logout.php">Выйти</a>
              </div>
         </div>
-        <div id="profile_float"> <div align="center">Хамидуллин Артур</div> <div align="center">2019</div>    
+        <div id="profile_float">
+         <div align="center">Хамидуллин Артур</div>
+          <div align="center">2019</div>
+           <div align="center">
+            <a href="https://vk.com/beplop"><img id="vk" src="css/vk.png"></a>
+        </div>    
      </body>
 </html>
