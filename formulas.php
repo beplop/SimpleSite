@@ -13,7 +13,7 @@ include("auth.php");
             <div class="head">
                 <p id="math" align="center">Математический форум</p>
             </div>
-            <div id="bad_users">
+            <div id="bad_users" style="margin-left: 1236px">
                 <p>Пользователь: <?php echo $_SESSION['username']; ?></p>
                 <p><a href="dashboard.php">Ваш профиль</a></p>
                 <a href="logout.php">Выйти</a>
@@ -23,6 +23,7 @@ include("auth.php");
         	<p>Навигация:</p>
             <a href="index.php">&#8226 Главная</a> <br>
             <a href="formulas.php">&#8226 Формулы</a>
+            <a href="game.php">&#8226 Игра</a>
         </div>  
         <div id="bad_big">
                 <div align="center">
@@ -92,7 +93,7 @@ include("auth.php");
                 <div id="calc"> 
                            <p>Мини-калькулятор</p>
                              <form action="" method="POST">
-                        	<p>Введите число:<input type="text" name="smth" id="smth"></p>
+                        	<p>Введите число:<input type="text" value="0" name="smth" id="smth"></p>
                         	<p>Выберите операцию:
                         	<select name="choice" id="choice">
                         		<option>Квадрат</option>
