@@ -4,6 +4,7 @@
          <meta charset="utf-8">
          <title>Регистрация</title>
          <link rel="stylesheet" href="css/style.css" />
+         <link rel="shortcut icon" href="css/title.jpg" type="image/x-icon">
      </head>
     <body>
         <?php
@@ -17,17 +18,17 @@
              $password2 = stripslashes($_REQUEST['password2']);
              $password = mysqli_real_escape_string($con,$password);
              $trn_date = date("Y-m-d H:i:s");
-               if (stripslashes($_REQUEST['password'])==stripslashes($_REQUEST['password2'])) {
-             $query = "SELECT * FROM `users` WHERE username='$username'
-                 and email='$email'";
+             if (stripslashes($_REQUEST['password'])==stripslashes($_REQUEST['password2'])) {    //Проверка совпадения паролей
+             $query = "SELECT * FROM `users` WHERE username='$username'                                  
+                 and email='$email'";                                                  //Проверка наличия юзера в бд
                  $result = mysqli_query($con,$query) or die(mysql_error());
              $rows = mysqli_num_rows($result);
                         if($rows==1) {echo "<div class='form'>
             <h3>Такой пользователь уже существует.</h3>
             <br/>Нажмите здесь для повторной <a href='registration.php'>Регистрации</a></div>";}
                    
-                    $query = "INSERT into `users` (username, password, email, trn_date)
-            VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
+                    $query = "INSERT into `users` (username, password, email, trn_date)          
+            VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";              //Занесение юзера в бд
                     $result = mysqli_query($con,$query);
                     if($result){
                         echo "<div class='form'>
