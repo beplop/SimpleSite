@@ -58,7 +58,7 @@
      position: fixed;
      width: 200px;
      display: inline-block;
-     margin-left: 1237px;
+     margin-left: 1225px;
      display: inline-block;
      background-color: white;
      opacity: 0.9;
@@ -216,11 +216,22 @@ a:hover{
 #exp > div {
      float: left;
 }
-.form{
+#form_user {
      border: 4px ridge red;
      width: 260px;
      margin-left: 31%;
      margin-top: 10px;
+     background-color: lightcyan;
+     border-radius: 10px;
+     padding-left: 30px;
+     padding-bottom:15px;
+     padding-top: 3px;
+     opacity: 0.9;
+}
+.form{
+     border: 4px ridge red;
+     width: 260px;
+     margin: 0 auto;
      background-color: lightcyan;
      border-radius: 10px;
      padding-left: 30px;
