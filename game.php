@@ -1,5 +1,7 @@
 <?php
 include("auth.php");
+include("rating.php");
+require('db.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,6 +29,11 @@ include("auth.php");
         </div>  
         <div id="bad_big">
         <form name="comment" action="comment.php" method="post">
+  <p>  <?php 
+      $true_text = "Задание";
+      echo "$true_text"; ?>
+   	
+   </p>
   <p>
     <p>Вы:<?php echo $_SESSION['username']; ?></p>
   </p>
@@ -44,10 +51,14 @@ include("auth.php");
 <?php
   $page_id = 1;// Уникальный идентификатор страницы (статьи или поста)
   $mysqli = new mysqli("localhost", "root", "ralibu94", "comments");// Подключается к базе данных
-  $result_set = $mysqli->query("SELECT * FROM `comments` WHERE `page_id`='$page_id'"); //Вытаскиваем все комментарии для данной страницы
+  $result_set = $mysqli->query("SELECT * FROM `comments` WHERE `page_id`='$page_id'"); //Вытаскиваю все комментарии для данной страницы
   while ($row = $result_set->fetch_assoc()) {
     print_r( "<b>".$row["name"]."</b>: ".$row["text_comment"]); //Вывод комментариев
     echo "<br />";
+    if ($row["text_comment"]==$true_text) {
+    	 $_SESSION['rate']++;
+       $sql = mysqli_query($con, "UPDATE `users` SET `rate` = rate + 1 WHERE `username` = '{$_SESSION['username']}'");
+    }
   }
 ?>
         </div>
