@@ -26,12 +26,15 @@ require('db.php');
             <a href="index.php">&#8226 Главная</a> <br>
             <a href="formulas.php">&#8226 Формулы</a>
             <a href="game.php">&#8226 Игра</a>
+            <br>
+            <a href="statya.php">&#8226 Статья</a>
         </div>  
         <div id="bad_big">
         <form name="comment" action="comment.php" method="post">
   <p>  <?php 
-      $true_text = "Задание";
-      echo "$true_text"; ?>
+      $text= "Задание: 2+2?";
+      $true_text = "4";
+      echo "$text"; ?>
    	
    </p>
   <p>
